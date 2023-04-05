@@ -13,11 +13,13 @@ html {
 
 body {
   font-family: "lato", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
   max-width: 130rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 /* ********************/
@@ -29,7 +31,7 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 9.6rem;
-  padding: 0 9.6rem;
+  padding: 0 3.5rem;
   background-color: #e5ecf1;
 }
 
@@ -39,13 +41,13 @@ body {
 }
 
 .sub-header a {
-  margin: 3rem;
+  margin: 2rem;
 }
 
 .header-list {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.2rem;
   list-style: none;
 }
 
@@ -54,7 +56,7 @@ body {
   display: inline-block;
   color: #148bf3;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 400;
   transition: all 0.3s;
 }
@@ -64,14 +66,25 @@ body {
   color: rgb(161, 150, 150);
 }
 
+.tribease-logo {
+  height: 4rem;
+}
+
 /* ********************/
 /* NAVIGATION */
 /* ******************* */
 
+/* .circle {
+  background-color: blue;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+} */
+
 .main-nav-list {
   display: flex;
   align-items: center;
-  gap: 3.5rem;
+  gap: 2rem;
   list-style: none;
 }
 
@@ -80,7 +93,7 @@ body {
   display: inline-block;
   color: #148bf3;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.6rem;
   transition: all 0.3s;
 }
 
@@ -112,28 +125,32 @@ body {
 }
 
 .intro {
+  max-width: 200rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20rem;
+  align-items: center;
+  gap: 12rem;
 }
 
 .intro-heading {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #3d4347;
   font-weight: 400;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .intro-description {
   color: #436481;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.6;
   margin-bottom: 4rem;
 }
 
 .intro-link:link,
-.intro-link {
+.intro-link:visited {
   display: inline-block;
   font-size: 1.8rem;
   padding: 1.4rem 9.6rem;
@@ -165,7 +182,7 @@ body {
 }
 
 /* ********************/
-/* GIVE IT A TRY  SECTION */
+/* SIGN UP SECTION */
 /* ******************* */
 
 .section-sign-up {
@@ -215,7 +232,7 @@ body {
 }
 
 /* *********************************/
-/* EVERYTHING YOU NEED TO SECTION */
+/* EVERYTHING YOU NEED  SECTION */
 /* ********************************* */
 
 .section-about-tribease {
@@ -225,20 +242,25 @@ body {
 
 .about-tribease-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   align-items: center;
-  column-gap: 3.2rem;
+  column-gap: 1rem;
+  padding: 4rem;
+}
+
+.logo {
+  width: 95%;
 }
 
 .about-tribease-container h2 {
-  font-size: 4.8rem;
+  font-size: 4rem;
   color: #3d4347;
   font-weight: normal;
   margin-bottom: 4rem;
 }
 
 .about-tribease-container p {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   color: #436481;
   line-height: 1.7;
   margin-bottom: 6rem;
@@ -258,14 +280,14 @@ body {
 }
 
 .pay-now-heading {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 2rem;
 }
 
 .pay-now-description {
-  font-size: 4.4rem;
+  font-size: 4rem;
   color: #fff;
   margin-bottom: 10rem;
 }
@@ -273,18 +295,18 @@ body {
 .pay-now-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
 }
 
 .pay-now-container h4 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #fff;
   text-align: center;
   margin-bottom: 2rem;
 }
 
 .pay-now-container p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #fff;
   text-align: center;
   line-height: 1.5;
@@ -309,7 +331,7 @@ body {
 }
 
 .upgrade-heading {
-  font-size: 3.2rem;
+  font-size: 2.6rem;
   color: #122c47;
   text-align: center;
   margin-bottom: 10rem;
@@ -319,24 +341,25 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 4rem;
+  padding: 3rem;
 }
 
 .upgrade-sub-heading {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .upgrade-sub-heading h3 {
   color: #122c47;
-  font-size: 3rem;
+  font-size: 2.6rem;
   text-align: left;
 }
 
 .sub-heading-1 {
   background-color: #fbdcbf;
-  padding: 10rem 4rem 4rem 4rem;
+  padding: 5rem 3rem 3rem 2rem;
   border-radius: 10px;
 }
 
@@ -349,7 +372,7 @@ body {
 }
 
 .upgrade-container p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #2a414c;
   line-height: 1.5;
   text-align: left;
@@ -362,7 +385,7 @@ body {
 .upgrade-link:link,
 .upgrade-link:visited {
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #000;
   background-color: #fff;
   padding: 1.4rem 9.6rem;
@@ -389,22 +412,23 @@ body {
 .registration-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 16rem;
+  column-gap: 5rem;
   align-items: center;
+  padding: 3rem;
 }
 
 .registration-logo {
-  width: 80%;
+  width: 60%;
 }
 
 .registration-heading {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #3d4347;
   margin-bottom: 4rem;
 }
 
 .registration-text {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #436481;
   line-height: 1.5;
   margin-bottom: 3rem;
@@ -417,7 +441,7 @@ body {
 }
 
 /* *******************************/
-/* RWHO WE ARE SECTION */
+/* WHO WE ARE SECTION */
 /* ****************************** */
 
 .section-who-we-are {
@@ -440,14 +464,14 @@ body {
 }
 
 .who-we-are h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: #fff;
   font-weight: 700;
   margin-bottom: 7rem;
 }
 
 .who-we-are p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #fff;
   line-height: 1.5;
   margin-bottom: 10rem;
@@ -458,7 +482,7 @@ body {
   display: inline-block;
   color: #000;
   background-color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 1.2rem 9.6rem;
   border: none;
   border-radius: 5px;
@@ -480,8 +504,12 @@ body {
   background-color: #f8f4ee;
 }
 
+.testimonial-container {
+  padding: 3rem;
+}
+
 .testimonial-text {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #293b53;
   text-align: center;
   line-height: 1.5;
@@ -495,14 +523,14 @@ body {
 }
 
 .founder-name {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #293b53;
   font-weight: normal;
   margin-bottom: 0.5rem;
 }
 
 .founder p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #78818e;
 }
 
@@ -520,10 +548,11 @@ body {
   grid-template-columns: 1fr 1fr;
   column-gap: 4rem;
   row-gap: 3rem;
+  padding: 3rem;
 }
 
 .reason-heading {
-  font-size: 4rem;
+  font-size: 3.6rem;
   color: #293b53;
   text-align: center;
   margin-bottom: 10rem;
@@ -533,18 +562,18 @@ body {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0);
   background-color: #fff;
   border-radius: 8px;
-  padding: 3.5rem;
+  padding: 3rem;
 }
 
 .sub-heading {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   color: #293b53;
   margin-bottom: 3rem;
   font-weight: 700;
 }
 
 .reason-description {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #4d525b;
   line-height: 1.5;
 }
@@ -563,14 +592,14 @@ body {
 }
 
 .sign-up-now-container h2 {
-  font-size: 4.2rem;
+  font-size: 4rem;
   color: #122c4f;
   font-weight: 700;
   margin-bottom: 4rem;
 }
 
 .sign-up-now-container p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #293b53;
   line-height: 1.5;
   margin-bottom: 7rem;
@@ -593,7 +622,7 @@ body {
 }
 
 .category-container img {
-  width: 25%;
+  width: 20%;
 }
 
 /* *******************************/
@@ -609,18 +638,18 @@ body {
   grid-template-columns: 1fr 1fr;
   column-gap: 30rem;
   background-color: #148bf3;
-  padding: 3rem 4.5rem 2.5rem 4.5rem;
+  padding: 3rem 4.5rem 2.5rem rem;
   border-radius: 10px;
 }
 
 .get-app-container h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #fff;
   margin-bottom: 5rem;
 }
 
 .get-app-container p {
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #fff;
   line-height: 1.5;
   margin-bottom: 9rem;
@@ -639,17 +668,18 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10rem;
+  padding: 3rem;
 }
 
 .partnership-container h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #3d4347;
   font-weight: normal;
   margin-bottom: 4rem;
 }
 
 .partnership-container p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #436481;
   line-height: 1.5;
   margin-bottom: 7rem;
@@ -671,10 +701,11 @@ body {
   display: grid;
   grid-template-columns: 1.5fr 2fr 1.5fr;
   column-gap: 5rem;
+  padding: 3rem;
 }
 
 .footer-paragraph-1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #4e5355;
   line-height: 1.5;
   margin-bottom: 3rem;
@@ -682,7 +713,7 @@ body {
 }
 
 .footer-paragraph-2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #4e5355;
   line-height: 1.5;
   margin-bottom: 3rem;
@@ -706,7 +737,7 @@ body {
 }
 
 .footer-heading h4 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #4a4a4a;
   margin-bottom: 4rem;
 }
